@@ -1,5 +1,5 @@
 {% set name = "eko" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 02fba5228d3830576c70e4bf766d5014096ca342fa4ef7c7317978cc75558002
+  sha256: dcd13edcdb367a475ba0e9457b36f7ed71c1522da35b170b972c799af50f053b
 
 build:
   entry_points:
@@ -47,7 +47,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: "Evolution Kernel Operators: EKO is a Python module to solve the DGLAP equations in N-space in terms of Evolution Kernel Operators in x-space."
+  summary: 'Evolution Kernel Operators: EKO is a Python module to solve the DGLAP equations in N-space in terms of Evolution Kernel Operators in x-space.'
   dev_url: https://github.com/N3PDF/eko
 
 extra:
