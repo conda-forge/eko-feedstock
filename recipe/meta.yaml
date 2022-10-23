@@ -1,5 +1,5 @@
 {% set name = "eko" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ac95d57002795b604164e82e754d2160136921364893fa8e1b52bfba8cb175a
+  sha256: 5d20d0982b1f261571fe7b29793b74bf83ac22260c3e57f8d33f0e428c5e8c6c
 
 build:
   entry_points:
