@@ -25,8 +25,6 @@ requirements:
   run:
     - python >=3.8
     - scipy >=1.7.3,<2
-    - lz4 >=3.1.10,<4
-    - lz4-c >=1.9.4
     - numba >=0.55,<1
     - pyyaml =6
     - numpy >=1.21,<2
@@ -39,6 +37,7 @@ test:
     - ekomark
   requires:
     - pip
+    - lz4 >=3.1.10,<4
   commands:
     - pip check
     - ekonav --help
