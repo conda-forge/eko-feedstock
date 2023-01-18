@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.8,<3.11
     - scipy >=1.7.3,<2
-    - numba >=0.55,<1
+    - numba >=0.55,<0.56
     - pyyaml =6
     - numpy >=1.21,<2
     - banana-hep >=0.6.4
