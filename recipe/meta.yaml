@@ -1,5 +1,5 @@
 {% set name = "eko" %}
-{% set version = "0.10.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ac95d57002795b604164e82e754d2160136921364893fa8e1b52bfba8cb175a
-
+  sha256: f962f20f1a5bec25775a7dd8c4432e43986972c5968fda8c1afd5e34fa09fc38
+  
 build:
   entry_points:
     - ekonav = ekomark.navigator:launch_navigator
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -27,8 +27,9 @@ requirements:
     - scipy >=1.7.3,<2
     - numba >=0.55,<0.56
     - pyyaml =6
-    - numpy >=1.21,<2
-    - banana-hep >=0.6.4
+    - numpy >=1.22,<2
+    - banana-hep >=0.6.8
+    - lz4 >=4.0.2,<5
 
 test:
   imports:
@@ -37,7 +38,6 @@ test:
     - ekomark
   requires:
     - pip
-    - lz4 >=3.1.10,<4
   commands:
     - pip check
     - ekonav --help
