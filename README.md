@@ -1,11 +1,11 @@
-About eko
-=========
+About eko-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eko-feedstock/blob/main/LICENSE.txt)
 
 Home: https://eko.readthedocs.io
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eko-feedstock/blob/main/LICENSE.txt)
 
 Summary: Evolution Kernel Operators: EKO is a Python module to solve the DGLAP equations in N-space in terms of Evolution Kernel Operators in x-space.
 
