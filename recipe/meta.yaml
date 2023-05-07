@@ -1,5 +1,5 @@
 {% set name = "eko" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f962f20f1a5bec25775a7dd8c4432e43986972c5968fda8c1afd5e34fa09fc38
-  
+  sha256: 3574ab738b968e4238f558917d3eaf7915cb81bad7a14bb0a7dbe190ed145a62
+
 build:
   entry_points:
     - ekonav = ekomark.navigator:launch_navigator
