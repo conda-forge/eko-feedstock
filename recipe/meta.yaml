@@ -1,5 +1,5 @@
 {% set name = "eko" %}
-{% set version = "0.12.2" %}
+{% set version = "0.13.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3574ab738b968e4238f558917d3eaf7915cb81bad7a14bb0a7dbe190ed145a62
+  sha256: 7c214698e642c68ecbf7c4dd27fea18bd2b8124ca0533532092e3eda0027f246
 
 build:
   entry_points:
@@ -24,10 +24,10 @@ requirements:
     - pip
   run:
     - python >=3.8,<3.11
-    - scipy >=1.7.3,<2
-    - numba >=0.55,<0.56
+    - scipy >=1.10.1,<2
+    - numba >=0.57,<0.58
     - pyyaml =6
-    - numpy >=1.22,<2
+    - numpy >=1.24,<2
     - banana-hep >=0.6.8
     - lz4 >=4.0.2,<5
 
