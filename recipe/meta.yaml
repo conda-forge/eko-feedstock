@@ -24,10 +24,10 @@ requirements:
     - pip
   run:
     - python >=3.8,<3.11
-    - scipy >=1.7.3,<2
-    - numba >=0.55,<0.56
+    - scipy >=1.10.1,<2
+    - numba >=0.57,<0.58
     - pyyaml =6
-    - numpy >=1.22,<2
+    - numpy >=1.24,<2
     - banana-hep >=0.6.8
     - lz4 >=4.0.2,<5
 
