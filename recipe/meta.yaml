@@ -12,7 +12,7 @@ source:
 build:
   entry_points:
     - ekonav = ekomark.navigator:launch_navigator
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -28,7 +28,6 @@ requirements:
     - numba >=0.57,<0.58
     - pyyaml =6
     - numpy >=1.24,<2
-    - banana-hep >=0.6.8
     - lz4 >=4.0.2,<5
 
 test:
