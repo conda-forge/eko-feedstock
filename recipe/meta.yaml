@@ -12,18 +12,18 @@ source:
 build:
   entry_points:
     - ekonav = ekomark.navigator:launch_navigator
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.8,<3.12
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.8,<3.11
+    - python >=3.8,<3.12
     - scipy >=1.10.1,<2
     - numba >=0.57,<0.58
     - pyyaml =6
@@ -35,7 +35,6 @@ test:
   imports:
     - eko
     - ekobox
-    - ekomark
   requires:
     - pip
   commands:
