@@ -1,0 +1,51 @@
+context:
+  version: 0.14.6
+
+package:
+  name: eko
+  version: ${{ version }}
+
+source:
+  - url: https://pypi.org/packages/source/e/eko/eko-${{ version }}.tar.gz
+    sha256: 6d7242ec4b32d0cb86fdc75dfabc4434fffbe14d3c26343016d51dc8ac33331c
+
+build:
+  script: ${{ PYTHON }} -m pip install .
+  number: 0
+  python:
+    entry_points:
+      - ekonav = ekomark.navigator:launch_navigator
+  noarch: python
+
+requirements:
+  host:
+    - python >=${{ python_min }},<3.13
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
+    - pip
+  run:
+    - python >=${{ python_min }},<3.13
+    - pyyaml <7.0,>=6.0
+    - lz4 >=4.0.2,<5
+    - numba >=0.59,<0.60
+    - scipy >=1.10.1,<2
+    - numpy >=1.24,<2
+
+tests:
+  - python:
+      imports:
+        - eko
+        - ekobox
+
+
+about:
+  homepage: https://eko.readthedocs.io
+  license: GPL-3.0-only
+  license_family: GPL
+  license_file: LICENSE
+  summary: 'Evolution Kernel Operators: EKO is a Python module to solve the DGLAP equations in N-space in terms of Evolution Kernel Operators in x-space.'
+  repository: https://github.com/N3PDF/eko
+
+extra:
+  recipe-maintainers:
+    - scarlehoff
