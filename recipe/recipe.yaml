@@ -14,20 +14,20 @@ build:
   number: 0
   python:
     entry_points:
-    - ekonav = ekomark.navigator:launch_navigator
+      - ekonav = ekomark.navigator:launch_navigator
   noarch: python
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python >=${{ python_min }},<3.13
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.9,<3.13
+    - python >=${{ python_min }},<3.13
     - pyyaml <7.0,>=6.0
     - lz4 >=4.0.2,<5
-    - numba >=0.59
+    - numba >=0.59,<0.60
     - scipy >=1.10.1,<2
     - numpy >=1.24,<2
 
@@ -36,6 +36,7 @@ tests:
       imports:
         - eko
         - ekobox
+
 
 about:
   homepage: https://eko.readthedocs.io
