@@ -3,7 +3,7 @@ About eko-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eko-feedstock/blob/main/LICENSE.txt)
 
-Home: https://eko.readthedocs.io
+Home: https://eko.readthedocs.io/
 
 Package license: GPL-3.0-only
 
@@ -145,5 +145,4 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@scarlehoff](https://github.com/scarlehoff/)
 
