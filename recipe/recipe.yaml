@@ -2,7 +2,7 @@ context:
   version: 0.14.6
 
 package:
-  name: "eko"
+  name: eko
   version: ${{ version }}
 
 source:
