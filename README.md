@@ -145,4 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@scarlehoff](https://github.com/scarlehoff/)
 
