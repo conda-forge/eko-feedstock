@@ -19,17 +19,17 @@ build:
 
 requirements:
   host:
-    - python >=${{ python_min }},<3.13
+    - python >=${{ python_min }},<3.14
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=${{ python_min }},<3.13
+    - python >=${{ python_min }},<3.14
     - pyyaml <7.0,>=6.0
     - lz4 >=4.0.2,<5
-    - numba >=0.59,<0.60
+    - numba >=0.60,<0.62
     - scipy >=1.10.1,<2
-    - numpy >=1.24,<2
+    - numpy >=2,<3
     - packaging >=24.1,<25
 
 tests:
