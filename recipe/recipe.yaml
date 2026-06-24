@@ -1,5 +1,5 @@
 context:
-  version: "0.15.3"
+  version: "0.15.4"
 
 package:
   name: eko
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/e/eko/eko-${{ version }}.tar.gz
-    sha256: 4fb4aae6983e2b37b21298aa5555988b898d0209c3b85fb40f93903d6f5c4260
+    sha256: 17f28a90d3741449b81741fd0c2567d47fe978766c5f7c57bbc14753def76c7e
 
 build:
   script: ${{ PYTHON }} -m pip install .
