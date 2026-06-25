@@ -1,5 +1,6 @@
 context:
-  version: "0.15.3"
+  version: "0.15.4"
+  python_min: "3.11"
 
 package:
   name: eko
@@ -7,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/e/eko/eko-${{ version }}.tar.gz
-    sha256: 4fb4aae6983e2b37b21298aa5555988b898d0209c3b85fb40f93903d6f5c4260
+    sha256: 17f28a90d3741449b81741fd0c2567d47fe978766c5f7c57bbc14753def76c7e
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -19,16 +20,16 @@ build:
 
 requirements:
   host:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }},<3.15
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }},<3.15
     - pyyaml <7.0,>=6.0
     - lz4 >=4.0.2,<5
-    - numba >=0.60,<0.62
-    - scipy >=1.10.1,<2
+    - numba >=0.65.0,<0.66
+    - scipy >=1.17.0,<2
     - numpy >=2,<3
     - packaging >=24.1,<25
 
