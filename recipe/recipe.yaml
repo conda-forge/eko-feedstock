@@ -1,5 +1,5 @@
 context:
-  version: "0.15.5"
+  version: "0.15.7"
   python_min: "3.11"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/e/eko/eko-${{ version }}.tar.gz
-    sha256: e1acb3728b1e15c17e60dcaf92c2e89f6a0448304150193ed4a8297ed1ff5e88
+    sha256: 2029d4fb7a1cc742452cdb9c83d7f18ab7ba61b793b1f87fa11ee706cb8de035
 
 build:
   script: ${{ PYTHON }} -m pip install .
